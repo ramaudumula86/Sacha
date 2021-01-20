@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                git branch: 'main', credentialsId: 'e184220b-c5c6-415a-bcc0-206d9ee7e819', url: 'https://github.com/ramaudumula86/Sacha'
+            }
+        }
+    }
+}
